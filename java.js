@@ -1,0 +1,21 @@
+
+$(document).ready(function(){
+    $("#Nature").click(function(){
+      $(".cubeA").hide();
+      $(".cubeT").hide();
+      $(".cube").show();
+    });
+    $("#Animal").click(function(){
+      $(".cube").hide();
+      $(".cubeT").hide();
+      $(".cubeA").show();
+    });
+    $("#Travel").click(function(){
+      $(".cube").hide();
+      $(".cubeA").hide();
+      $(".cubeT").show();
+    });
+    $("#all").click(function(){
+      $("img").show();
+    });
+  });

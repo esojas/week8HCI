@@ -1,0 +1,215 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(224, 252, 255);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbg {
+    background-color: rgb(112, 152, 218);
+    width: 100%;
+}
+.container {
+    padding: 10px 10%;
+}
+nav li {
+    list-style: none;
+    margin: 10px 20px;
+    display: inline-block;
+}
+nav li a{
+    color: rgb(144, 242, 255);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav li a::after{
+    content: '';
+    width:0;
+    height:2px;
+    background: rgb(224, 252, 255);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav li a:hover::after {
+    width: 100%;
+}
+.textplace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column  ;
+    margin: 5%;
+}
+.pictureplace {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.cube {
+    border-radius: 20px;
+}
+.cubeA {
+    border-radius: 20px;
+}
+.cubeT {
+    border-radius: 20px;
+}
+.normal {
+    background-color: rgb(224, 252, 255);
+    border: none;
+    color: rgb(112, 152, 218);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 15px;
+  }
+
+.normal:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.centertext {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 426px) { 
+    section {
+        max-width: 425px;
+    }
+    .pictureplace {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* project 2 */
+
+.boxform {
+    border-radius: 15px;
+    background-color: rgb(112, 152, 218);
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#tickbox {
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+#cart {
+    overflow-x: auto;
+}
+.cartimg {
+    width: 50%;
+}
+
+/* project 2 */
+
+.qna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qna h2 {
+    margin: 80px auto 10px;
+}
+
+.grouping {
+    margin: 0 auto;
+    padding: 64px;
+    width: 768px;
+}
+
+.grouping-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+.grouping-item button {
+    position: relative;
+    text-align: left;
+    display: flex;
+    width: 100%;
+    padding: 1em 0;
+    color: black;
+    font-size: 1.15rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.grouping-item button:hover {
+    cursor: pointer;
+}
+.grouping-content p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+.grouping-button {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:768px){
+    html,body{
+        overflow-x: hidden;
+    }
+    body{
+        align-items: center;
+        margin:0px
+    }
+    .grouping{
+        width:100%;
+    }
+}
